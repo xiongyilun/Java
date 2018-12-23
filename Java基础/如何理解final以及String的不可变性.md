@@ -144,7 +144,6 @@ Student{name='李四', age=20}
 由于Student的可变性，导致了HashSet中存在了两个相同的元素。所以千万不要使用可变类型做HashMap和HashSet的键值。
 
 一般在日常使用中都是用String做键，正是因为String具有不可变性。
-![企业微信截图_1540022586419.png](WEBRESOURCE876ec8e9f2e5e8f82079f48baaf1dc67)
 
 
 虽然s1已经被修改成了"123zxc"，但是这并不是在s1指向的String对象上修改的，而是新建了一个new String("123zxc")对象，然后用s1指向该对象，并没有对HashSet里的原String对象产生影响，仍是123
